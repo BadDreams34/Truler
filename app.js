@@ -22,7 +22,7 @@ const corsOptions = {
     "optionsSuccessStatus": 204
 } 
 app.use(cors(corsOptions))
-app.use('/home', homepage)
+
 
 app.use(session({
     secret: "honeyyesdafdkfljasf",
@@ -42,6 +42,7 @@ app.use(session({
 app.use(express.json())
 app.use(passport.initialize())
 app.use(passport.session())
+app.use('/home', homepage)
 const customfields = {
     usernameField: "email", 
     passwordField: "password"
