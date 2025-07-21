@@ -1,4 +1,15 @@
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto; /* center horizontally */
+}
 body {
     background-color:aliceblue;
 }
@@ -46,18 +57,7 @@ body {
     height:60px;
     border-radius:9px;
 }
-/* 
-button {
-    background: rgb(27, 80, 155);
-    width: 100px;
-    height: 40px;
-    font-size:15px;
-    margin-right:50px;
-   
-    margin-top: 30px;
-    color: white;
-    border: none;
-} */
+
 
 .requests {
     display:none;
@@ -114,7 +114,6 @@ nav {
  
 }
 .friendprofile {
-     /* outline: 1px solid rgb(8, 8, 8); */
      padding:1px;
      margin:10px;
      flex-grow:1;
@@ -296,8 +295,6 @@ h4 {
    
     background: none;
     border:none;
-  
-  
     font-size:18px;
     color:rgb(225, 217, 217);
 
