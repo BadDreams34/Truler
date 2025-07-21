@@ -1,0 +1,534 @@
+
+body {
+    background-color:aliceblue;
+}
+
+
+.rembtn {
+    width:80px;
+    margin-left:20px;
+    background-color:#9f9c9c;
+    margin-top:180px;
+}
+
+
+
+.cont {
+    display:flex;
+    
+    margin-bottom: 30px;
+    
+
+}
+
+
+#logo {
+    width: 90px;
+    height: 80px;
+}
+
+#pfp {
+    margin-top:8px;
+    width: 50px;
+    height: 50px;
+    margin-left:4px;
+}
+.friends {
+    height: 550px;
+    margin-right:auto;
+}
+
+.profile {
+    margin-left: 5px;
+    display:flex;
+    width: 360px;
+    margin-top:30px;
+    height:60px;
+    border-radius:9px;
+}
+/* 
+button {
+    background: rgb(27, 80, 155);
+    width: 100px;
+    height: 40px;
+    font-size:15px;
+    margin-right:50px;
+   
+    margin-top: 30px;
+    color: white;
+    border: none;
+} */
+
+.requests {
+    display:none;
+    flex-direction:column;
+    gap:50px; 
+}
+
+input {
+    height: 40px;
+    width: 500px;
+    margin-top:20px;
+    padding: 10px;
+    border-radius: 8px;
+    border:2px solid;
+    margin-left:20px;
+    font-family: monospace;
+}
+
+h2 {
+    width: 609px;
+    font-size: 30px;
+    margin-left:20px;
+    margin-top:32px;
+}
+
+
+nav {
+    margin-left:460px;
+    
+}
+
+
+.chas {
+    height:1150px;
+    overflow-y: auto;
+    margin-bottom:-70px;
+
+}
+.chas::-webkit-scrollbar {
+  display: none; 
+}
+
+
+
+.mainchat {
+  
+    width: 510px;
+    margin:10px;
+    margin-right:0px;
+    display:none;
+    flex-direction:column;
+    height: 640px;
+    justify-content:space-between;
+ 
+}
+.friendprofile {
+     /* outline: 1px solid rgb(8, 8, 8); */
+     padding:1px;
+     margin:10px;
+     flex-grow:1;
+     
+
+}
+
+
+.no {
+    margin-top: 10px;
+    padding-top:15px;
+    font-family:monospace;
+    font-size: 18px;
+    margin-left: 10px;
+    color:rgb(23, 60, 79);
+
+
+}
+.yes {
+    font-family:serif;
+    font-size:20px;
+     margin-left: 10px;
+     margin-top:-28px;
+      margin-bottom:15px;
+      padding-bottom:6px;
+      width: 350px;
+   
+
+}
+
+
+
+
+
+
+
+
+/* .frs {
+    margin-top: 50px;
+    margin-left:42px;
+    font-family: monospace;
+    color: grey;
+    font-size:16px;
+} */
+
+h4 {
+    padding: 10px;
+    
+}
+
+.eachfrs:hover {
+    background-color:rgb(175, 165, 165);
+}
+
+.profile {
+    background-color:#dedede;
+}
+.profile:hover {
+    background-color:#d6d2d2;
+}
+
+
+
+
+.hed {
+    font-family: "Gill Sans";
+}
+.ok {
+    margin-left: 60px;
+}
+
+.setting {
+    position:absolute;
+    left: 260px;
+
+}
+
+.walike {
+    background-color:rgb(121, 130, 124);
+}
+
+
+
+
+
+
+/*ok*/
+
+
+.cont {
+    position:fixed;
+    left:150px;
+    right:150px; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
+
+    height:100vh;
+}
+
+
+.headdd {
+  
+    font-family: Verdana, Arial;
+    padding-left: 20px;
+    padding-right: 20px;
+    width:1100px;
+    margin:0px;
+    height:50px;
+    font-size: 40px;
+    display:block;
+    background-color:rgb(201, 230, 232)
+    
+  
+}
+
+.frs {
+    margin-top:0px;
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    padding-bottom: 0px;
+    background-color:rgb(126, 126, 130);
+    color:white;
+     background-color:rgb(121, 121, 168);
+    font-family: monospace;
+    width: 720px;
+    margin-left:1px;
+}
+
+
+#af, #req {
+    background-color:rgb(121, 121, 168);
+    border:none;
+    height:40px;
+    line-height:40px;
+    color:white;
+    font-size: 20px;
+    font-family:monospace;
+    transition: background-color 0.3s;
+    margin-left:auto;
+     width:200px;
+}
+
+
+#af:hover, #req:hover {
+    background-color:rgb(173, 173, 219);
+}
+
+
+.friends {
+    display:flex;
+}
+
+
+
+.profile {
+    display:flex;
+    margin-top:170px;
+}
+
+.usern {
+        margin-top:0px;
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    padding-bottom: 0px;
+    background-color:rgb(126, 126, 130);
+    color:white;
+     background-color:rgb(121, 121, 168);
+    font-family: monospace;
+    width: 720px;
+    margin-left:1px;
+
+}
+
+
+.settings {
+   
+    background: none;
+    border:none;
+  
+  
+    font-size:18px;
+    color:rgb(225, 217, 217);
+
+  
+    margin-top:9px;
+
+}
+
+.settings:hover {
+   
+    background: none;
+    cursor: pointer;
+
+}
+button {
+    cursor:pointer;
+}
+
+
+.friendss {
+    display:none;
+    flex-direction:column;
+     
+}
+
+.hed {
+    margin-top:140px;
+}
+
+
+
+
+.frndbtn {
+    width:150px;   
+    margin-left:30px;
+    font-size:20px;
+    font-family:monospace;
+}
+
+
+
+input {
+  width:416px;
+  height:44px;
+  border: 1px solid black;
+  padding-left: 10px;
+
+}
+input:focus {
+    outline: none;
+    border: 1px solid hsl(233.115 calc(1*49.194%) 51.373%/1);
+}
+
+
+input:user-invalid {
+    outline: none;
+    border: 1px solid red;
+}
+
+
+#text {
+
+    font-family:monospace;
+
+    margin-top: 40px;
+}
+
+
+.main {
+    margin-top:100px;
+}
+
+
+
+.divs , .divr {
+    display: none;
+    flex-direction:column;
+    margin-left: 20px;
+    margin-top:20px;
+}
+
+
+.subh {
+    font-family: monospace;
+    font-size: 20px;
+    margin-top:-25px;
+    margin-left: 38px;
+    margin-bottom:-30px;
+}
+
+
+
+.h4 {
+    margin-left: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+      background-color:rgb(121, 121, 168);
+    width: 330px;
+ 
+
+}
+
+
+.can {
+    margin-left: 400px;
+    margin-top: -68px;
+    width: 70px;
+    height:40px;
+    background-color: rgb(204, 165, 165);
+
+}
+
+.can:hover{
+    background-color: rgb(162, 153, 153);
+}
+
+
+.acc, .rej  {
+    margin-left: 400px;
+    margin-top: -68px;
+    width: 70px;
+    background-color: rgb(162, 153, 153);
+}
+
+
+
+.rej {
+    margin-left: 480px;
+    margin-top:-21px;
+}
+
+
+.usern {
+    font-family: monospace;
+    font-size: 22px;
+    flex-grow: 1;
+    margin-top:0px;
+    margin-left:0px;
+
+}
+
+
+.leftpane {
+    display:flex;
+    flex-direction:column;
+    background-color:rgb(226, 238, 244);
+    width: 380px;
+    height:100vh;
+    margin-left:0px;
+    border:0px;
+
+}
+
+.eachfrs {
+    translate: -1140px 50px;
+    margin-left: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    background-color:rgb(185, 171, 171);
+    width: 320px;
+    height:40px;
+    padding-bottom:20px;
+    
+
+}
+
+
+.chat {
+    height:900px;
+    height:735px;
+    display:flex;
+}
+
+.msgdiv {
+    background-color:rgb(207, 204, 200);
+    width:350px;
+    padding-right:25px;
+    margin-left:10px;
+ 
+ word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-size:20px;
+   
+}
+
+.time {
+    margin-left:260px;
+    margin-top: -60px;
+    padding-bottom:10px; 
+
+}
+
+
+
+.send {
+    display:flex;
+}
+
+#sendbox {
+        margin-top: 90px;
+    width: 310px;
+    height: 20px;
+    border-radius:0px;
+        margin-bottom: -60px;
+        margin-left:5px;
+}
+
+#sendbtn {
+    margin-left: 10px;
+    margin-bottom:-50px;
+  width:0px;
+  height:0px;
+    border-radius: 50px;
+      border: none;
+  background: none;
+  cursor: pointer;
+}
+
+
+#imgsen{
+    margin-top: 76px;
+    margin-left: -10px;
+}
+
+.friendprofile {
+    background-color:#ededed;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    border-radius:4px;
+    display:none;
+    margin-left:-90px;
+}

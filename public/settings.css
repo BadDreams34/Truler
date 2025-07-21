@@ -1,0 +1,251 @@
+.use, .useb{
+    opacity:0;
+    visibility:hidden;
+}
+
+.bios {
+    position:relative;
+    opacity:0;
+    z-index:5;
+    translate: -162% 100%;
+}
+
+.afteruse {
+    opacity:1;
+    visibility: visible;
+}
+
+
+
+body {
+
+    background-color:aliceblue;
+
+}
+
+
+
+
+
+.username {
+    font-family:monospace;
+    
+}
+
+
+
+
+
+.usernameedit, .useb, .bios {
+    border: none;
+    width:50px;
+    height:25px;
+    border-radius: 4px;
+    transition: background-color 0.5s;
+    background-color:rgb(111, 111, 113);
+    color:white;
+    margin-bottom:9px;
+}
+
+
+
+/* 
+.logout {
+  
+  
+  
+  width: 150px;
+  font-size: 19px;
+  height: 50px;
+  border-radius: 9px;
+  font-family: monospace;
+  border:none;
+  color:white;
+  background-color:rgb(111, 111, 113);
+  transition: background-color 0.5s;
+}
+
+.logout:hover {
+background-color:#3a3b40;
+} */
+
+
+
+
+
+.bios {
+    margin-top:2px;
+    width:120px;
+    height:30px;
+    
+}
+
+.use {
+    border-radius:4px;
+    border: 1px black solid;
+    font-family:monospace;
+    height:20px;
+}
+
+.useb {
+    margin-top:9px;
+}
+
+
+
+
+
+/* from here ok */
+
+
+.account {
+    position:fixed;
+    left:150px;
+    right:150px; 
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    
+
+    height:100vh;
+}
+
+
+h1 {
+  
+    font-family: Verdana, Arial;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:0px;
+    height:50px;
+    font-size: 40px;
+    display:block;
+    background-color:rgb(201, 230, 232)
+  
+}
+
+
+.head {
+    margin-top:0px;
+    height:40px;
+    line-height:40px;
+    padding-left:20px;
+    padding-bottom: 0px;
+    background-color:rgb(126, 126, 130);
+    color:white;
+    flex-grow:1;
+    font-family: monospace;
+}
+/**/
+
+.top {
+    display:flex;
+    
+}
+.logout {
+    background-color:rgb(121, 121, 168);
+    border:none;
+    height:40px;
+    line-height:40px;
+    color:white;
+    font-size: 20px;
+    font-family:monospace;
+    transition: background-color 0.3s;
+}
+
+.logout:hover {
+    background-color:rgb(173, 173, 219);
+}
+
+.edits {
+    width:940px;
+    padding-left:50px;
+    padding-right:50px;
+    margin-left:50px;
+    margin-right:50px;
+    background-color:rgb(150, 165, 166);
+    height:400px;
+}
+body {
+     background-color:rgb(95, 108, 120);
+}
+
+.usedd {
+    display:flex;
+    gap:400px;
+}
+
+
+.fle {
+    display:flex;
+    flex-direction:column;
+    
+    
+}
+
+.edus {
+    flex-grow:0;
+    margin-top:49px;
+    
+}
+
+
+.use {
+    background-color:rgb(150, 165, 166);
+    outline:none;
+    font-size:11px;
+}
+
+h2 {
+    font-family:monospace;
+}
+.bio {
+    width:380px;
+    height:180px;
+    border-radius:7px;
+    resize:none;
+    position:relative;
+    z-index:1;  
+    font-size:16px;
+    outline:none;
+    background-color:rgb(95, 108, 120);
+    color:white;
+    font-family:monospace;
+}
+
+
+
+.bios {
+    margin-left:-195px;
+    
+}
+
+.usernameedit:hover, .useb:hover, .bios:hover {
+    background-color:rgb(135, 139, 139)
+
+}
+
+
+
+.goback {
+    background-color:rgb(121, 121, 168);
+    border:none;
+    height:40px;
+    line-height:40px;
+    color:white;
+    font-size: 20px;
+    font-family:monospace;
+    transition: background-color 0.3s;
+    margin-right:2px;
+    margin-left: 2px;
+}
+
+.goback:hover {
+    background-color:rgb(173, 173, 219);
+}
+
+
+
+button {
+    cursor:pointer;
+}
+

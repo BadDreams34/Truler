@@ -15,7 +15,7 @@ model Session {
   expiresAt   DateTime
 }
 
-model users {
+model user {
   id             Int          @id @default(autoincrement())
   username       String       @unique
   password       String
@@ -27,19 +27,20 @@ model users {
   friend2        friendship[] @relation("f2")
 }
 
+
 model requests {
-  sender     users @relation("requestsender", fields: [senderid], references: [id])
+  sender     user @relation("requestsender", fields: [senderid], references: [id])
   senderid   Int
-  reciever   users @relation("requestreciever", fields: [recieverid], references: [id])
+  reciever   user @relation("requestreciever", fields: [recieverid], references: [id])
   recieverid Int
   status stats @default(PENDING)
   @@id([senderid, recieverid])
 }
 
 model friendship {
-  user1   users          @relation("f1", fields: [user1id], references: [id])
+  user1   user          @relation("f1", fields: [user1id], references: [id])
   user1id Int
-  user2   users          @relation("f2", fields: [user2id], references: [id])
+  user2   user         @relation("f2", fields: [user2id], references: [id])
   user2id Int
   chats   usermessages[]
 
@@ -52,6 +53,7 @@ model usermessages {
   text       String
   user1id   Int
   user2id    Int
+  sendername  String
   sentAt DateTime @default(now())
   friendship friendship @relation(fields: [user1id, user2id], references: [user1id, user2id])
 }

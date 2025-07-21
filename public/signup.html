@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" initial-scale="1.0">
+<link rel="stylesheet" href="./signup.css">
+<script defer src="./signup.js"></script>
+</head>
+<body>
+
+<div class="container">
+<h2>Create an Account</h2>
+<form novalidate>
+<div class="form">
+    <div class="combine">
+<label id="emaillb" for="email">EMAIL<span aria-label="Required">*</span></label>
+<input id="email" type="email" name="email" required>
+</div>
+    <div class="combine">
+<label id="usernamelb" for="username">USERNAME<span aria-label="Required">*</span></label>
+<input id="username" type="text" name="username" required pattern="(\w|\.)*">
+</div>
+    <div class="combine">
+<label id="passwordlb" for="password">PASSWORD<span aria-label="Required">*</span></label>
+<input id="password" type="password" name="password" required minlength="6">
+</div>
+    <div class="combine">
+<label id="passwordvlb" for="confirmpass">CONFIRM PASSWORD<span aria-label="Required">  *</span></label>
+<input id="confirpass" type="password" name="confirpass" required minlength="6">
+</div>
+   <div class="combine">
+<button type="submit">Create Account</button>
+<p>Already have an account? <a link href="./login.html">Login</a></p>
+</div>
+
+</div>
+</form>
+</div>
+
+
+</body>
+
+
+</html>
