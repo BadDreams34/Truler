@@ -1,4 +1,15 @@
 
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto; /* center horizontally */
+}
 body {
     background-color:aliceblue;
 }
@@ -46,18 +57,7 @@ body {
     height:60px;
     border-radius:9px;
 }
-/* 
-button {
-    background: rgb(27, 80, 155);
-    width: 100px;
-    height: 40px;
-    font-size:15px;
-    margin-right:50px;
-   
-    margin-top: 30px;
-    color: white;
-    border: none;
-} */
+
 
 .requests {
     display:none;
@@ -114,7 +114,6 @@ nav {
  
 }
 .friendprofile {
-     /* outline: 1px solid rgb(8, 8, 8); */
      padding:1px;
      margin:10px;
      flex-grow:1;
@@ -206,8 +205,8 @@ h4 {
 
 .cont {
     position:fixed;
-    left:150px;
-    right:150px; 
+    left:90px;
+    right:90px; 
     border-left: 1px solid black;
     border-right: 1px solid black;
     
@@ -221,7 +220,7 @@ h4 {
     font-family: Verdana, Arial;
     padding-left: 20px;
     padding-right: 20px;
-    width:1100px;
+    width:1075px;
     margin:0px;
     height:50px;
     font-size: 40px;
@@ -241,7 +240,7 @@ h4 {
     color:white;
      background-color:rgb(121, 121, 168);
     font-family: monospace;
-    width: 720px;
+    width: 695px;
     margin-left:1px;
 }
 
@@ -296,8 +295,6 @@ h4 {
    
     background: none;
     border:none;
-  
-  
     font-size:18px;
     color:rgb(225, 217, 217);
 
@@ -452,7 +449,7 @@ input:user-invalid {
 }
 
 .eachfrs {
-    translate: -1140px 50px;
+    translate: -1100px 50px;
     margin-left: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:20px;
@@ -466,8 +463,8 @@ input:user-invalid {
 
 
 .chat {
-    height:900px;
-    height:735px;
+    height:800px;
+ 
     display:flex;
 }
 
@@ -502,7 +499,7 @@ input:user-invalid {
     width: 310px;
     height: 20px;
     border-radius:0px;
-        margin-bottom: -60px;
+        margin-bottom: -0px;
         margin-left:5px;
 }
 
