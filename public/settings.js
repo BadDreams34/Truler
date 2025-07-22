@@ -27,7 +27,7 @@ const response = await fetch("/home/allfriends", {
 
 
 goback.addEventListener('click', ()=> {
-    window.location.href = 'http://localhost:6050/homepage.html'
+    window.location.href = 'https://truler-backend.onrender.com/homepage.html'
 })
 
 
