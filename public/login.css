@@ -2,14 +2,14 @@ body {
     height: 100vh;
     /* background: linear-gradient(105deg,blue,rgb(166, 159, 159),white, white, white) */
 background: linear-gradient(75deg,blue,rgb(16, 9, 49), rgb(45, 37, 89), black, black, black);
+align-content:center;
 
 
 }
 .container {
-    margin-top: 70px;
-    margin-left: 320px;
-  margin-left: 440px;
-    width:470px;
+    
+    margin-inline:auto;
+    max-width:470px;
     border-radius: 20px;
     padding: 30px;
     display:flex;
@@ -22,9 +22,10 @@ background: linear-gradient(75deg,blue,rgb(16, 9, 49), rgb(45, 37, 89), black, b
     gap: 20px;    
 }
 
-h2 {
-    text-align:center;
 
+h2 {
+
+    text-align:center;
 }
 
 .combine {
@@ -35,7 +36,7 @@ h2 {
   
 }
 input, button {
-    width:416px;
+   max-width:416px;
     height:44px;
     border-radius:  8px;
     background: linear-gradient(#222224);
@@ -101,4 +102,13 @@ img {
 a {
     text-decoration:none;
     color:rgb(67, 67, 226);
+}
+
+
+@media (max-width: 430px) {
+    .container {
+         margin: 30px;
+
+    }
+       
 }

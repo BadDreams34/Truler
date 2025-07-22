@@ -49,26 +49,6 @@ body {
 
 
 
-/* 
-.logout {
-  
-  
-  
-  width: 150px;
-  font-size: 19px;
-  height: 50px;
-  border-radius: 9px;
-  font-family: monospace;
-  border:none;
-  color:white;
-  background-color:rgb(111, 111, 113);
-  transition: background-color 0.5s;
-}
-
-.logout:hover {
-background-color:#3a3b40;
-} */
-
 
 
 
@@ -99,15 +79,14 @@ background-color:#3a3b40;
 
 
 .account {
-    position:fixed;
-    left:150px;
-    right:150px; 
+    margin-inline:auto;
+    width: min(1000px, 100% );
+    /* width:min(1450px, 100% - 3em); */
     border-left: 1px solid black;
     border-right: 1px solid black;
-    
-
     height:100vh;
 }
+
 
 
 h1 {
@@ -122,6 +101,7 @@ h1 {
     background-color:rgb(201, 230, 232)
   
 }
+
 
 
 .head {
@@ -157,11 +137,10 @@ h1 {
 }
 
 .edits {
-    width:940px;
+    max-width:790px;
     padding-left:50px;
     padding-right:50px;
-    margin-left:50px;
-    margin-right:50px;
+    margin-inline:auto;
     background-color:rgb(150, 165, 166);
     height:400px;
 }
@@ -171,7 +150,7 @@ body {
 
 .usedd {
     display:flex;
-    gap:400px;
+    justify-content:space-between
 }
 
 
@@ -239,6 +218,7 @@ h2 {
     margin-left: 2px;
 }
 
+
 .goback:hover {
     background-color:rgb(173, 173, 219);
 }
@@ -249,3 +229,25 @@ button {
     cursor:pointer;
 }
 
+
+@media (max-width:430px) {
+    h1 {
+        font-size:35px;
+    }
+    .edits {
+        padding:5px;
+    }
+    .usedd {
+                display:flex;
+        flex-direction:column;
+
+    }
+    .edus {
+        margin:0;
+    }
+    .bio {
+        width:90%;
+    }
+
+  
+}

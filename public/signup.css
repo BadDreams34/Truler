@@ -2,13 +2,13 @@ body {
     height: 100vh;
     /* background: linear-gradient(105deg,blue,rgb(166, 159, 159),white, white, white) */
 background: linear-gradient(75deg,blue,rgb(16, 9, 49), rgb(45, 37, 89), black, black, black);
+align-content:center;
 
 }
 .container {
-    margin-top: 70px;
-    margin-left: 400px;
-    width:470px;
-    height:620px;
+    margin-inline:auto;
+    max-width:470px;
+    min-height:620px;
     border-radius: 20px;
     padding: 30px;
     display:flex;
@@ -37,7 +37,7 @@ p {
   
 }
 input, button {
-    width:416px;
+    max-width:416px;
     height:44px;
     border-radius:  8px;
     background: linear-gradient(#222224);
@@ -56,7 +56,6 @@ input:focus {
 input:user-invalid {
     outline: none;
     border: 1px solid red;
-
 }
 
 
@@ -92,7 +91,6 @@ span {
     margin-top: -15px;
     margin-left: 6px;
     font-size:15px;
-    
 }
 
 
@@ -102,7 +100,14 @@ img {
     width:100px;
     height:100px;
     margin-top:-60px;
-
 }
 
 
+
+
+@media (max-width:430px) {
+    .container {
+        margin:40px;
+        font-size:10px;
+    }
+}
