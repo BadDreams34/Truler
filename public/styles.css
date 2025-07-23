@@ -7,7 +7,7 @@ h1 {
 .wrap {
   padding: 3em;
   display: flex;
-  gap: 9px;
+  gap: 2em;
   justify-content: space-between;
 }
 .left {
