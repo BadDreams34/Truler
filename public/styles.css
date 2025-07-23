@@ -52,7 +52,7 @@ button:hover {
   background: rgb(73, 73, 150);
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   .wrap {
     padding: 4em;
     flex-direction:column;
