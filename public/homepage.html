@@ -3,49 +3,50 @@
   <heading>
     <title>Truler</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./homepage.js"></script>
     <link href="./homepage.css" rel="stylesheet" />
   </heading>
   <body>
     <div class="cont">
+      <h1 class="headdd">Truler</h1>
+      <nav>
+        <h1 class="frs">FRIENDS</h1>
+        <button id="af">Add Friend</button>
+        <button id="req">Requests</button>
+      </nav>
+      <div class="subcon">
+      
       <div class="leftpane">
-       <h1 class="headdd">Truler</h1>
         <div class="friends">
-          <h1 class="frs">FRIENDS</h1>
-          <button id="af">Add Friend</button>
-          <button id="req">Requests</button>
-
-          <!--firendss profiles -->
+     
         </div>
 
         <div class="profile">
-          <a  class="setting" href="./settings.html"> <button class="settings">SETTINGS</button></a>
+          <a class="setting" href="./settings.html">
+            <button class="settings">SETTINGS</button></a>
         </div>
       </div>
       <div class="main">
-        <nav>
-          
-        </nav>
+        <nav></nav>
         <div class="chat">
           <div class="mainchat">
-            <div class="chas">
-              
+            <div class="chas"></div>
+            <div class="send">
+              <input type="text" placeholder="Enter a message" id="sendbox" />
+              <button type="button" id="sendbtn">
+                <img
+                  src="send.png"
+                  alt="send"
+                  width="50px"
+                  height="55px"
+                  id="imgsen"
+                />
+              </button>
             </div>
-              <div class="send">
-             <input type="text" placeholder="Enter a message" id="sendbox">
-          <button type="button" id="sendbtn">
-            <img src="send.png" alt="send" width="50px" height="55px" id="imgsen"></button>
-          </div>
-          </div>
-        
-          <div class="friendprofile">
-            
-            
           </div>
 
-          
-         
+          <div class="friendprofile"></div>
         </div>
         <div class="friendss">
           <h2 class="hed">Add Friend</h2>
@@ -55,16 +56,12 @@
         </div>
         <div class="requests">
           <h2 class="hed ok">Requests</h2>
-          <div class="divr">
-            
-          </div>
-           <div class="divs">
-            
-          </div>
-          
+          <div class="divr"></div>
+          <div class="divs"></div>
 
-<!---->
+          <!---->
         </div>
+      </div>
       </div>
     </div>
   </body>

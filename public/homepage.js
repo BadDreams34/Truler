@@ -10,11 +10,16 @@ const frindarea = document.querySelector(".friendprofile");
 const mainchat = document.querySelector(".mainchat");
 const setting = document.querySelector('.setting')
 const request = document.querySelector(".requests");
+const leftpane = document.querySelector('.leftpane')
 
-
+const isMobile = window.matchMedia("(max-width: 450px)");
 
 
 window.addEventListener("load", async () => {
+
+  leftpane.setAttribute('style', 'display:flex')
+
+   
   const chatBox = document.querySelector(".chas");
 
   try {
@@ -54,8 +59,14 @@ window.addEventListener("load", async () => {
           chats.setAttribute("style", "display:flex;");
           friends.setAttribute("style", "display:none;");
           frindarea.setAttribute('style', "display:flex;")
+          chats.classList.add('reschat')
           sendd.innerHTML = "";
           frindarea.innerHTML = "";
+
+          if (isMobile.matches){
+            leftpane.setAttribute('style', 'display:none')
+
+          }
     
           const body = { userid: friend.friend[0].id }
          
@@ -175,8 +186,12 @@ const addfriend = document.querySelector("#af");
 addfriend.addEventListener("click", () => {
   request.setAttribute("style", "display:none");
   chats.setAttribute("style", "display:none;");
-  friends.setAttribute("style", "display:flex;");
+  friends.setAttribute("style", "display:block;");
 });
+ if (isMobile.matches){
+            leftpane.setAttribute('style', 'display:none')
+
+          }
 
 const sendfriendreq = document.querySelector(".frndbtn");
 
@@ -225,8 +240,10 @@ const requests = document.querySelector("#req");
 const divr = document.querySelector(".divr");
 const divs = document.querySelector(".divs");
 requests.addEventListener("click", async () => {
-  divr.innerHTML = '<h4 class="subh">Recieved</h4>';
-  divs.innerHTML = '<h4 class="subh">Sent</h4>';
+  divr.innerHTML = '<h4 class="subh">Recieved</h4><div class="dir"></div>';
+  divs.innerHTML = '<h4 class="subh">Sent</h4><div class="dis"></div>';
+  const dir = document.querySelector('.dir')
+  const dis = document.querySelector('.dis')
   chats.setAttribute("style", "display:none;");
   friends.setAttribute("style", "display:none;");
   request.setAttribute("style", "display:flex");
@@ -234,6 +251,10 @@ requests.addEventListener("click", async () => {
     method: "GET",
     credentials: "include",
   });
+   if (isMobile.matches){
+            leftpane.setAttribute('style', 'display:none')
+
+          }
   if (response.ok) {
     const requests = await response.json();
     console.log("requests", requests);
@@ -282,9 +303,9 @@ requests.addEventListener("click", async () => {
           console.log(result);
           window.location.reload();
         });
-        divr.appendChild(name);
-        divr.appendChild(accept);
-        divr.appendChild(reject);
+        dir.appendChild(name);
+        dir.appendChild(accept);
+        dir.appendChild(reject);
         console.log("done ok ");
       });
     }
@@ -314,8 +335,8 @@ requests.addEventListener("click", async () => {
           window.location.reload();
         });
 
-        divs.appendChild(name);
-        divs.appendChild(Cancel);
+        dis.appendChild(name);
+        dis.appendChild(Cancel);
       });
     }
   }
