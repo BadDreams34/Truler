@@ -18,7 +18,7 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 - Clone this Repository with `git clone`
 - `npm install` to install all the required packages.
 - Change the value of `PORT` variable in app.js to your desired Port.
-- Create a .env file in the root folder with Variable `DATABASE_URL` and give it the database url.
+- Create a .env file in the root folder with Variable `DATABASE_URL` with value of your Database URL and `SECRET` with value of your secret string for your session authentiation.
 - Run `npx prisma db pull` and `npx prisma migrate dev`
 - Run your Backend with `node app.js`
 
