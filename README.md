@@ -11,7 +11,12 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 - Send Friend Requests to other Users, cancel Requests and Reciever can either Accept Or Reject Request.
 - Send Messages to Friends and Remove Friends.
 - Edit Bio and username.
-- Responsive and Works on any Device.
+- Unique UI and Responsive and Works on any Device.
 
+
+## Setup
+- Clone this Repository with `git clone`
+- `npm install` to install all the required packages.
+  
 
 
