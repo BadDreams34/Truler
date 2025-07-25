@@ -1,5 +1,6 @@
 # Truler
 Messaging App Made With NodeJS/ Vanilla JavaScript 
+
 <img width="799" height="526" alt="image" src="https://github.com/user-attachments/assets/c20addb1-61b8-4afa-a6ec-3098d4c696e4" />
 
 
@@ -18,13 +19,20 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 ## Setup
 - Clone this Repository with `git clone`
 - Create a .env file in the root folder with the following variables : `PORT`, `SECRET`, `DATABASE_URL`.
-  <img width="588" height="95" alt="image" src="https://github.com/user-attachments/assets/7d94a087-a9ea-4c1d-9aa5-fff445e0e738" />
+```
+  //.env
+// change the values accordingly 
+DATABASE_URL="postgresql://dfsasdf@localhost:5432/sdfafds?schema=public"
+SECRET="dfljsafjalfjasldjfasdlfj"
+PORT="5323"
+```
+
 - Run `npm run setup` for install Required Packages and Setting up database.
 - Run your Backend with `npm run start`
 
 
 ## Help 
-- for any help Reach out to me on my discord server https://discord.gg/KhQXBepFJT 
+- for any help Reach out to me. my discord @mdi38
   
 
 
