@@ -5,22 +5,22 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 
 
 ## Functionality
-- Send Friend Requests to other Users, cancel Requests and Reciever can either Accept Or Reject Request.
-- Send Messages to Friends and Remove Friends.
-- Edit Bio and username.
-- Unique UI and Responsive and Works on any Device.
+- Send friend requests to other users, cancel requests and reciever can either accept Or reject request.
+- Send Messages to friends and remove friends.
+- Edit bio and username.
+- Unique UI and responsive and works on any device.
 
 ## Features 
 - Session Based Authentiation with PassPortJS.
 - Uses ExpressJS FrameWork for API.
-- Backend packed with PostgreSQL Database which Stores Users and their information including Bio,username,etc. , Friends Relation, Requests and their Status along with Messages.
-- Utilises Prisma for simplifying PostgreSQL Queries and Stores hashed Password with Bcrypt.
+- Backend powered by a PostgreSQL database that stores users and their information, including bio, username, etc., along with friend relationships, request statuses, and messages.
+- Utilises Prisma for simplifying PostgreSQL queries and stores hashed password with bcrypt.
 
 ## Setup
 - Clone this Repository with `git clone`
 - Create a .env file in the root folder with the following variables : `PORT`, `SECRET`, `DATABASE_URL`.
 ```
-  //.env
+//example of .env
 // change the values accordingly 
 DATABASE_URL="postgresql://dfsasdf@localhost:5432/sdfafds?schema=public"
 SECRET="dfljsafjalfjasldjfasdlfj"
@@ -32,7 +32,7 @@ PORT="5323"
 
 
 ## Help 
-- for any help Reach out to me. my discord @mdi38
+- For any help Reach out to me on discord @mdi38
   
 
 
