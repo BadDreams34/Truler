@@ -1,11 +1,7 @@
 # Truler
 Messaging App Made With NodeJS/ Vanilla JavaScript 
+<img width="799" height="526" alt="image" src="https://github.com/user-attachments/assets/c20addb1-61b8-4afa-a6ec-3098d4c696e4" />
 
-## Features 
-- Session Based Authentiation with PassPortJS.
-- Uses ExpressJS FrameWork for API.
-- Backend packed with PostgreSQL Database which Stores Users and their information including Bio,username,etc. , Friends Relation, Requests and their Status along with Messages.
-- Utilises Prisma for simplifying PostgreSQL Queries and Stores hashed Password with Bcrypt.
 
 ## Functionality
 - Send Friend Requests to other Users, cancel Requests and Reciever can either Accept Or Reject Request.
@@ -13,15 +9,22 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 - Edit Bio and username.
 - Unique UI and Responsive and Works on any Device.
 
+## Features 
+- Session Based Authentiation with PassPortJS.
+- Uses ExpressJS FrameWork for API.
+- Backend packed with PostgreSQL Database which Stores Users and their information including Bio,username,etc. , Friends Relation, Requests and their Status along with Messages.
+- Utilises Prisma for simplifying PostgreSQL Queries and Stores hashed Password with Bcrypt.
 
 ## Setup
 - Clone this Repository with `git clone`
-- `npm install` to install all the required packages.
-- Change the value of `PORT` variable in app.js to your desired Port.
-- Create a .env file in the root folder with Variable `DATABASE_URL` with value of your Database URL and `SECRET` with value of your secret string for your session authentiation.
-- Run `npx prisma db pull` and `npx prisma migrate dev`
-- Run your Backend with `node app.js`
+- Create a .env file in the root folder with the following variables : `PORT`, `SECRET`, `DATABASE_URL`.
+  <img width="588" height="95" alt="image" src="https://github.com/user-attachments/assets/7d94a087-a9ea-4c1d-9aa5-fff445e0e738" />
+- Run `npm run setup` for install Required Packages and Setting up database.
+- Run your Backend with `npm run start`
 
+
+## Help 
+- for any help Reach out to me on my discord server https://discord.gg/KhQXBepFJT 
   
 
 
