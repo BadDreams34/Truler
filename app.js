@@ -1,5 +1,3 @@
-
-
 const express = require("express");
 const app = express();
 const PATH = 6050;
@@ -33,7 +31,7 @@ app.use(cors(corsOptions));
 
 app.use(
   session({
-    secret: "honeyyesdafdkfldsfjasf",
+    secret: process.env.SECRET,
     cookie: {
       maxAge: 604800 * 1000,
       httpOnly: true,
