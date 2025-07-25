@@ -17,6 +17,9 @@ Messaging App Made With NodeJS/ Vanilla JavaScript
 ## Setup
 - Clone this Repository with `git clone`
 - `npm install` to install all the required packages.
+- Change the value of `PORT` variable in app.js to your desired Port.
+- create a .env file in the root folder with Variable `DATABASE_URL` and give it the database url.
+- run 
   
 
 
