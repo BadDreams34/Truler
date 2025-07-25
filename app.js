@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PATH = 6050;
+const PORT = process.env.PORT;
 const cors = require("cors");
 const { checkeuser, finduserbyid, Signup } = require("./queries");
 const homepage = require("./routes/homepage");
@@ -11,23 +11,14 @@ const passport = require("passport");
 const { Strategy: LocalStrategy } = require("passport-local");
 const bcrypt = require("bcrypt");
 const prisma = new PrismaClient();
-const URL = "http://127.0.0.1:5500";
 const chat = require('./routes/chats')
 const acc = require('./routes/account')
 
 
 app.use(express.static('public'))
 
-const corsOptions = {
-  origin: `${URL}`,
-  methods: "GET,PUT,POST",
-  allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true,
-  maxAge: 840000,
-  preflightContinue: false,
-  optionsSuccessStatus: 204,
-};
-app.use(cors(corsOptions));
+
+app.use(cors());
 
 app.use(
   session({
@@ -133,8 +124,8 @@ app.get("/", (req, res) => {
 });
 
 // here just send cache control respective headers using Cache Controls
-app.listen(PATH, () => {
-  console.log(`listening to Port ${PATH}`);
+app.listen(PORT, () => {
+  console.log(`listening to Port ${PORT}`);
 });
 
 
